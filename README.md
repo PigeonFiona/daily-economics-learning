@@ -17,8 +17,8 @@
 - `latest-news.js` 作为新闻数据文件，页面会自动读取
 - `news-sources.json` 配置 RSS/官方数据源
 - `Update-LatestNews.ps1` 可从数据源生成新的 `latest-news.js`
-- `scripts/update-latest-news.mjs` 可在 GitHub Actions 中生成新的 `latest-news.js`
-- `.github/workflows/update-news.yml` 每天自动更新新闻并部署到 GitHub Pages
+- `scripts/update-latest-news.mjs` 可作为英文 RSS 抓取实验脚本
+- `.github/workflows/update-news.yml` 部署当前已整理好的静态网站到 GitHub Pages
 - 12 周课程地图
 - 无需安装依赖，直接打开 `index.html` 即可使用
 
@@ -49,17 +49,12 @@ powershell -ExecutionPolicy Bypass -File .\Update-LatestNews.ps1
 2. 把本文件夹里的全部文件上传到仓库。
 3. 进入仓库的 `Settings` -> `Pages`。
 4. 在 `Build and deployment` 中选择 `GitHub Actions`。
-5. 进入 `Actions` 页面，手动运行 `Update latest economics news`。
+5. 进入 `Actions` 页面，手动运行 `Deploy economics learning site`。
 6. 等工作流完成后，GitHub Pages 会给出网站地址。
 
-工作流会每天自动运行一次：
+工作流会部署仓库中现有的静态文件。当前正式页面使用人工整理过的 `latest-news.js`，避免自动 RSS 抓取把英文新闻写成 `Chinese translation pending`。
 
-- 读取 `news-sources.json`
-- 抓取 RSS/官方数据源
-- 生成 `latest-news.js`
-- 发布静态网站
-
-注意：自动脚本抓取到的英文新闻会保留英文原文，并在中文字段标注待翻译。若要稳定生成高质量中文解释，可以后续接入翻译 API 或人工/AI 校订流程。
+注意：若要每天自动生成高质量中英双语财经新闻，需要后续接入翻译 API、新闻 API 或人工/AI 校订流程；否则自动抓取只能保证英文来源真实，不能保证中文解释质量。
 
 ## 账户与学习记录
 
