@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>经济学札记 | Economic Studies Review</title>
+    <link rel="stylesheet" href="styles.css?v=20260611-1915" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">每日三十分钟 / Daily Thirty Minutes</p>
+          <h1>经济学札记 <span>Economic Studies Review</span></h1>
+        </div>
+        <div class="today-card">
+          <span id="todayDate">2026年6月11日</span>
+          <strong id="programPosition">第 1 周 · 第 4 天</strong>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="left-rail" aria-label="每日学习流程">
+          <div class="rail-header">
+            <span>今日流程</span>
+            <strong id="totalProgress">0 / 30 分钟</strong>
+          </div>
+          <nav class="steps" id="steps"></nav>
+          <div class="streak-panel">
+            <span>连续学习</span>
+            <strong id="streakCount">0 天</strong>
+            <p id="streakNote">完成五个环节后，今日会计入学习连续天数。</p>
+          </div>
+        </aside>
+
+        <section class="main-panel" aria-live="polite">
+          <div class="lesson-head">
+            <div>
+              <p class="eyebrow" id="lessonTime">5分钟</p>
+              <h2 id="lessonTitle">晨读简报 / Morning Brief</h2>
+            </div>
+            <button class="complete-button" id="completeStep" type="button">完成本步</button>
+          </div>
+
+          <div id="lessonContent" class="lesson-content"></div>
+        </section>
+
+        <aside class="right-rail" aria-label="辅助学习信息">
+          <section class="side-section account-section">
+            <div class="section-title">
+              <span>学习账户</span>
+            </div>
+            <div id="accountPanel"></div>
+          </section>
+
+          <section class="side-section course-browser">
+            <div class="section-title">
+              <span>12周课程库</span>
+            </div>
+            <label class="field-label" for="weekSelect">选择课程周</label>
+            <select id="weekSelect"></select>
+            <div id="weekDayPanel" class="week-day-panel"></div>
+          </section>
+
+          <section class="side-section">
+            <div class="section-title">
+              <span>今日主线</span>
+            </div>
+            <h3>能源冲击如何改变通胀与利率预期？</h3>
+            <p>用最新财经新闻做入口，理解物价、汇率、政策和市场反应之间的传导关系。</p>
+          </section>
+
+          <section class="side-section">
+            <div class="section-title">
+              <span>关键词</span>
+            </div>
+            <div class="tag-cloud">
+              <span>US CPI</span>
+              <span>核心通胀</span>
+              <span>人民币汇率</span>
+              <span>服务消费</span>
+              <span>Policy rate</span>
+            </div>
+          </section>
+
+          <section class="side-section">
+            <div class="section-title">
+              <span>我的笔记</span>
+            </div>
+            <textarea id="noteBox" placeholder="写下今天最想记住的一句话"></textarea>
+          </section>
+
+          <section class="side-section">
+            <div class="section-title">
+              <span>学习档案</span>
+            </div>
+            <div id="profilePanel" class="profile-panel"></div>
+          </section>
+
+          <section class="side-section">
+            <div class="section-title">
+              <span>往期课程</span>
+            </div>
+            <div id="archivePanel" class="archive-panel"></div>
+          </section>
+
+          <section class="side-section compact">
+            <div class="section-title">
+              <span>本周课程</span>
+            </div>
+            <ol class="week-list" id="currentWeekList">
+              <li>第1天：经济运行地图</li>
+              <li>第2天：GDP与增长</li>
+              <li>第3天：CPI、PPI与物价</li>
+              <li>第4天：能源冲击与通胀</li>
+              <li>第5天：利率预期</li>
+              <li>第6天：市场反应</li>
+              <li>第7天：一周复盘</li>
+            </ol>
+          </section>
+        </aside>
+      </main>
+
+      <section class="course-map">
+        <div class="course-heading">
+          <p class="eyebrow">12周课程地图</p>
+          <h2>用新闻建立经济学框架</h2>
+        </div>
+        <div class="course-grid" id="courseGrid"></div>
+      </section>
+    </div>
+
+    <script src="latest-news.js?v=20260611-1915"></script>
+    <script src="script.js?v=20260611-1915"></script>
+  </body>
+</html>

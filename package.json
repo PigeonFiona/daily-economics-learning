@@ -1,0 +1,9 @@
+{
+  "name": "daily-economics-learning",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update-news": "node scripts/update-latest-news.mjs"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "MarketWatch Top Stories",
+    "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    "language": "en",
+    "type": "markets"
+  },
+  {
+    "name": "MarketWatch Market Pulse",
+    "url": "https://feeds.content.dowjones.io/public/rss/mw_marketpulse",
+    "language": "en",
+    "type": "markets"
+  },
+  {
+    "name": "The Guardian Business",
+    "url": "https://www.theguardian.com/business/rss",
+    "language": "en",
+    "type": "financial_news"
+  },
+  {
+    "name": "CNBC Finance",
+    "url": "https://www.cnbc.com/id/10000664/device/rss/rss.html",
+    "language": "en",
+    "type": "financial_news"
+  },
+  {
+    "name": "Federal Reserve Press Releases",
+    "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+    "language": "en",
+    "type": "central_bank"
+  },
+  {
+    "name": "ECB Press Releases",
+    "url": "https://www.ecb.europa.eu/rss/press.html",
+    "language": "en",
+    "type": "central_bank"
+  },
+  {
+    "name": "BLS CPI News Release",
+    "url": "https://www.bls.gov/feed/news_release/cpi.rss",
+    "language": "en",
+    "type": "official_data"
+  }
+]
